@@ -1,0 +1,21 @@
+[project]
+name = "email-assistant"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ahnaf-Tahmid-NL", email = "ahnaf.tahmid@neoscoder.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "google-genai>=2.25.0",
+    "python-dotenv>=1.2.3",
+    "streamlit>=1.64.0",
+]
+
+[project.scripts]
+email-assistant = "email_assistant:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
